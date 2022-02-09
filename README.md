@@ -1,4 +1,4 @@
-# DS202Mamoore
+# practice1-mamoore1440
 I am Vai IE
 I am a junior in COMS.
 
