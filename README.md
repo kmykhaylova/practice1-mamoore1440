@@ -13,3 +13,7 @@ Reading, note taking, talking to people.
 What are the three most important tools/strategies you use for organizing your work?
 
 Keeping a todo list, writing down notes, separating notes of classes into different folders.
+
+I am a junior in COMS
+
+I am Vai IE: vaidehee bahired
