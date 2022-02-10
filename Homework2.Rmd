@@ -1,0 +1,55 @@
+---
+title: 'Homework 2'
+author: "Michael Moore"
+date: "2/2/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### Due: 2/9/2022 before 11:59pm. Submit in Canvas (file upload).
+
+1. Finish the in-class practice in Slides 3-12 in "Lecture 2-2-Practice for git", link: https://yumouqiu.github.io/DS202-Spring2022/Practice/practice01.html  
+    a. Download the RMarkdown file with these homework instructions to use as a template for your work. Make sure to replace "Your Name" with your name.  
+    b. In the RMarkdown file, write down table of team members, and their github repository links;   
+    
+    Kate mykhaylova:  https://github.com/kmykhaylova/practice1-your-kmykhaylova
+    
+    Polina Semenova:  https://github.com/psemenova/practice1-psemenova
+    
+    vaidehee bahired: https://github.com/vbahirat/practice1-vai
+    
+the number of successful pull requests you made, and the github repository to which you requested a change;  
+
+successful pull request: 3, the three pull request came from the github repos on top.
+
+the number of pull requests you accepted, and the github repository from which you accepted.  
+
+I accepted 3 requests and I accepted from my own: https://github.com/mamoore1440/practice1-mamoore1440
+
+    c. Write down a list with at least 3 tips of how to make working with git/github easier  
+    
+    Use google when confused, make little changes so merges are easier, and always ask the repo owner when confused.
+
+2. Generate the graph of LifExp vs. gdpPercap for US, Canada (fixed data) and Australia by RMarkdown based on the data set "gapminder-5060", like what we did in the class.  
+Please use Github to collaborate on this problem. For example, one member can create the plot of US in his/her repository. The other member will fork this repository, add the result for the second country, and make a pull request for merging into the main repository. Each member should at least analyze one country and make at least one pull request. **Please submit the RMarkdown file, the output file, and the screen shot of the successful pull request and the merge.**
+```{r}
+data <- read.csv("gapminder-5060.csv")
+data<-data[(data$country=="United States"),]
+ggplot(data = data, aes(x = lifeExp, y = gdpPercap)) +
+  geom_point()
+```
+
+3. Write a paragraph (~200 words) describing an example of what you consider data science. Write your paragraph in R Markdown. Include at least 
+    a. one link to a chart or an image and 
+    b. at least one itemized or enumerated list.
+    
+    I would consider Data Science to be anything involving sorting, showing, or manipulating data. For example when you are ranking what cereals to eat in the morning to see what you are going to eat. I would also consider using data to make a decision part of data science. When you are talking to your boss about possible paths a project can take and you bring up cost and benefits of each path: I would consider this data science. This is a link to where your dollar goes for taxes: https://static.businessinsider.com/image/4ca64b417f8b9afe3e3d0200-750.jpg. I would say this is a great example of data science as it shows perfectly where your money goes and it is in order of greatest to smallest. You could use this chart to inform your decision on how to vote. This is a link to the Unites States military budget over time: https://www.heritage.org/sites/default/files/~/media/images/reports/2010/b2418_chart1_1/b2418_chart1_2.jpg. This shows information in a pleasing way which would be used to make a different infromed decision. Personally, I think data science shows up in everyday life more often than people think. I consider choosing what to buy based on price to be data science. 
+    
+
+Note: your submission is supposed to be fully reproducible, i.e. the TA and I will 'knit' your submission in RStudio. Including the link to the image is the tricky part here. Make sure that you don't use any file structure that depends on your computing environment.
+
+
+For the submission: submit your solution in an **R Markdown file** and (just for insurance) submit the corresponding html (or Word) file with it. 
