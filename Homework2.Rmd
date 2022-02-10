@@ -50,6 +50,13 @@ ggplot(data = canada, aes(x = lifeExp, y = gdpPercap)) +
   geom_line()
 ```
 
+```{r}
+data1 <- read.csv("gapminder-5060.csv")
+Australia <- data1[(data1$country=="Australia"),]
+ggplot(data = Australia, aes(x = lifeExp, y = gdpPercap)) +
+  geom_point()
+```
+
 3. Write a paragraph (~200 words) describing an example of what you consider data science. Write your paragraph in R Markdown. Include at least 
     a. one link to a chart or an image and 
     b. at least one itemized or enumerated list.
